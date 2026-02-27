@@ -16,4 +16,4 @@ A small, professional multi-page website built with semantic HTML and accessibil
 - Accessible form (labels, required validation, fieldset + legend)
 
 ## Screenshot
-![Site screenshot](Screenshot 2026-02-27 112216.png)
+![Site screenshot](SiteScreenshot.png)
