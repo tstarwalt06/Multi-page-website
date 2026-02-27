@@ -1,1 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tyler Starwalt | Contact</title>
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; line-height: 1.6; margin: 0; }
+    header, main, footer { max-width: 900px; margin: 0 auto; padding: 16px; }
+    nav ul { list-style: none; padding: 0; display: flex; gap: 12px; flex-wrap: wrap; }
+    nav a { text-decoration: none; }
+    label { font-weight: 600; }
+    input, select, textarea, button { font: inherit; max-width: 100%; }
+    textarea { width: 100%; }
+  </style>
+</head>
 
+<body>
+  <header>
+    <h1>Contact</h1>
+    <p>Send a message using the form below.</p>
+
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://github.com/tstarwalt06" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="form-title">
+      <h2 id="form-title">Message Form</h2>
+
+      <form action="#" method="post">
+        <div>
+          <label for="name">Name</label><br>
+          <input id="name" name="name" type="text" required minlength="2" autocomplete="name">
+        </div>
+
+        <div>
+          <label for="email">Email</label><br>
+          <input id="email" name="email" type="email" required autocomplete="email">
+        </div>
+
+        <div>
+          <label for="topic">Topic</label><br>
+          <select id="topic" name="topic" required>
+            <option value="">Choose one…</option>
+            <option value="project">Project question</option>
+            <option value="collab">Collaboration</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <fieldset>
+          <legend>Preferred contact method</legend>
+
+          <div>
+            <input id="contact-email" name="preferred_contact" type="radio" value="email" required>
+            <label for="contact-email">Email</label>
+          </div>
+
+          <div>
+            <input id="contact-phone" name="preferred_contact" type="radio" value="phone">
+            <label for="contact-phone">Phone</label>
+          </div>
+        </fieldset>
+
+        <div>
+          <label for="message">Message</label><br>
+          <textarea id="message" name="message" required minlength="10"></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Tyler Starwalt</p>
+    <p>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </p>
+  </footer>
+</body>
+</html>
