@@ -175,3 +175,44 @@ button:focus {
   text-decoration: none;
 }
 .btn:hover, .btn:focus { filter: brightness(1.08); }
+
+
+form {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-3);
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.25);
+}
+
+fieldset {
+  background: #fff;
+}
+
+
+button[type="submit"] {
+  align-self: flex-start;
+  margin-top: var(--space-2);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+button[type="submit"]:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+}
+
+
+.form-note {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
