@@ -9,49 +9,63 @@
 
 <body>
   <header>
-    <h1>Tyler Starwalt</h1>
-    <p>I am an IT student learning web development and cybersecurity through hands-on projects and practical experience.</p>
+    <div class="container stack">
+      <h1>Tyler Starwalt</h1>
+      <p class="muted">
+        I am an IT student learning web development and cybersecurity through hands-on projects and practical experience.
+      </p>
 
-    <nav aria-label="Primary">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="pages/about.html">About</a></li>
-        <li><a href="pages/projects.html">Projects</a></li>
-        <li><a href="pages/contact.html">Contact</a></li>
-        <li><a href="https://github.com/tstarwalt06" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-      </ul>
-    </nav>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pages/about.html">About</a></li>
+          <li><a href="pages/projects.html">Projects</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+          <li>
+            <a href="https://github.com/tstarwalt06" target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section aria-labelledby="welcome">
-      <h2 id="welcome">Welcome</h2>
-      <p>
-        This website demonstrates semantic HTML structure, proper headings, and
-        a validated contact form without using any CSS or JavaScript.
-      </p>
+    <div class="container stack-lg">
+      <section class="card stack" aria-labelledby="welcome">
+        <h2 id="welcome">Welcome</h2>
+        <p>
+          This website demonstrates semantic HTML structure, proper headings, and
+          a validated contact form without using any CSS or JavaScript.
+        </p>
 
-      <figure>
-        <img src="images/profile.jpg" alt="Portrait of Tyler Starwalt">
-        <figcaption>A simple, professional profile image.</figcaption>
-      </figure>
-    </section>
+        <figure class="stack">
+          <img src="images/profile.jpg" alt="Portrait of Tyler Starwalt">
+          <figcaption class="muted">A simple, professional profile image.</figcaption>
+        </figure>
+      </section>
 
-    <section aria-labelledby="next">
-      <h2 id="next">Quick Links</h2>
-      <ul>
-        <li><a href="pages/about.html">Learn more about me</a></li>
-        <li><a href="pages/projects.html">See my projects</a></li>
-        <li><a href="pages/contact.html">Send me a message</a></li>
-      </ul>
-    </section>
+      <section class="card stack" aria-labelledby="next">
+        <h2 id="next">Quick Links</h2>
+        <ul class="stack">
+          <li><a href="pages/about.html">Learn more about me</a></li>
+          <li><a href="pages/projects.html">See my projects</a></li>
+          <li><a href="pages/contact.html">Send me a message</a></li>
+        </ul>
+      </section>
+    </div>
   </main>
 
   <footer>
-    <p>© 2026 Tyler Starwalt</p>
-    <p>
-      <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-    </p>
+    <div class="container stack">
+      <p>© 2026 Tyler Starwalt</p>
+      <p>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+          LinkedIn
+        </a>
+      </p>
+    </div>
   </footer>
 </body>
 </html>
