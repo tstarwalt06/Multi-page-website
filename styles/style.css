@@ -1,0 +1,156 @@
+:root {
+  /* Layout */
+  --max: 60rem;
+
+  /* Spacing scale */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 2rem;
+
+  /* Colors */
+  --bg: #ffffff;
+  --text: #111111;
+  --muted: #555555;
+  --border: #e5e5e5;
+  --surface: #f7f7f7;
+
+  /* Border / shadow */
+  --radius: 12px;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+/* Base */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+}
+
+img, iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Type scale */
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 var(--space-2); }
+h2 { font-size: 1.5rem; line-height: 1.25; margin: 0 0 var(--space-2); }
+h3 { font-size: 1.125rem; line-height: 1.3; margin: 0 0 var(--space-1); }
+
+p { margin: 0; }
+
+/* Global layout */
+header, main, footer {
+  padding: var(--space-3) var(--space-2);
+}
+
+header {
+  border-bottom: 1px solid var(--border);
+}
+
+footer {
+  border-top: 1px solid var(--border);
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-2) 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+nav a {
+  color: inherit;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+}
+
+nav a:hover,
+nav a:focus {
+  outline: none;
+  background: var(--surface);
+}
+
+/* Forms */
+label { font-weight: 600; }
+input, select, textarea, button {
+  font: inherit;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.6rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--bg);
+}
+
+textarea { min-height: 140px; resize: vertical; }
+
+fieldset {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-2);
+}
+
+legend { font-weight: 700; }
+
+button {
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--text);
+  border-radius: 10px;
+  background: var(--text);
+  color: var(--bg);
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  filter: brightness(1.08);
+}
+
+/* Utility classes (use these everywhere) */
+.container {
+  max-width: var(--max);
+  margin: 0 auto;
+}
+
+.stack > * + * {
+  margin-top: var(--space-2);
+}
+
+.stack-lg > * + * {
+  margin-top: var(--space-3);
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: var(--space-2);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 0.9rem;
+  border-radius: 10px;
+  border: 1px solid var(--text);
+  background: var(--text);
+  color: var(--bg);
+  text-decoration: none;
+}
+.btn:hover, .btn:focus { filter: brightness(1.08); }
