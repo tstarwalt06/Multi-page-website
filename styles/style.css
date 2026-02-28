@@ -15,6 +15,11 @@
 
   --radius: 12px;
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+
+  --nav-bg: #111827;
+--nav-text: #ffffff;
+--nav-hover: #1f2937;
+--accent: #3b82f6;
 }
 
 
@@ -35,16 +40,10 @@ img, iframe {
   display: block;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
 .embed {
   width: 100%;
   max-width: 100%;
-  aspect-ratio: 16 / 9; /* nice default ratio */
+  aspect-ratio: 16 / 9;
   border: 0;
 }
 
@@ -68,28 +67,40 @@ footer {
 }
 
 
+nav {
+  background: var(--nav-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-1);
+}
+
 nav ul {
   list-style: none;
   padding: 0;
-  margin: var(--space-2) 0 0;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-2);
+  gap: var(--space-1);
 }
 
 nav a {
-  color: inherit;
+  color: var(--nav-text);
   text-decoration: none;
-  padding: 0.25rem 0.5rem;
-  border-radius: 8px;
+  padding: 0.45rem 0.65rem;
+  border-radius: 10px;
+  display: inline-block;
 }
 
 nav a:hover,
 nav a:focus {
-  outline: none;
-  background: var(--surface);
+  background: var(--nav-hover);
+  outline: 2px solid transparent;
 }
 
+nav a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
 
 label { font-weight: 600; }
 input, select, textarea, button {
