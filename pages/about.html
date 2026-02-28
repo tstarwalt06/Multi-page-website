@@ -9,58 +9,69 @@
 
 <body>
   <header>
-    <h1>About</h1>
-    <p>A little more about who I am and what I’m learning.</p>
+    <div class="container stack">
+      <h1>About</h1>
+      <p class="muted">A little more about who I am and what I’m learning.</p>
 
-    <nav aria-label="Primary">
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="https://github.com/tstarwalt06" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-      </ul>
-    </nav>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="https://github.com/tstarwalt06" target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section aria-labelledby="bio">
-      <h2 id="bio">Bio</h2>
-      <p>
-        I’m Tyler, and I enjoy troubleshooting technology and learning how systems work. I also love to bowl and golf!
-      </p>
-      <p>
-        My current focus is strengthening my fundamentals in learning systems, trouble shooting, and studying different areas.
-      </p>
-    </section>
+    <div class="container stack-lg">
+      <section class="card stack" aria-labelledby="bio">
+        <h2 id="bio">Bio</h2>
+        <p>
+          I’m Tyler, and I enjoy troubleshooting technology and learning how systems work.
+          I also love to bowl and golf!
+        </p>
+        <p>
+          My current focus is strengthening my fundamentals in learning systems, troubleshooting,
+          and studying different areas.
+        </p>
+      </section>
 
-    <section aria-labelledby="embed">
-      <h2 id="embed">Map</h2>
-      <p>
-        Here is where I am from
-      </p>
+      <section class="card stack" aria-labelledby="map">
+        <h2 id="map">Map</h2>
+        <p class="muted">
+          This embedded map is an example of using an iframe to include external content in an accessible,
+          responsive way.
+        </p>
 
-      <h2>Embedded Resource</h2>
-<p>
-  This embedded map is an example of using an iframe to include external
-  content in an accessible, responsive way.
-</p>
+        <iframe
+          title="Map of Charleston, Illinois"
+          src="https://www.google.com/maps?q=Charleston,+IL&output=embed"
+          width="600"
+          height="450"
+          style="border:0;"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </section>
+    </div>
+  </main>
 
-<iframe
-  title="Map of Mattoon, Illinois"
-  src="https://www.google.com/maps?q=Charleston,+IL&output=embed"
-  width="600"
-  height="450"
-  style="border:0;"
-  loading="lazy"
-  referrerpolicy="no-referrer-when-downgrade">
-</iframe>
-      
   <footer>
-    <p>© 2026 Tyler Starwalt</p>
-    <p>
-      <a href="https://www.linkedin.com/in/tyler-starwalt-a29b95323/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-    </p>
+    <div class="container stack">
+      <p>© 2026 Tyler Starwalt</p>
+      <p>
+        <a href="https://www.linkedin.com/in/tyler-starwalt-a29b95323/" target="_blank" rel="noopener noreferrer">
+          LinkedIn
+        </a>
+      </p>
+    </div>
   </footer>
 </body>
 </html>
